@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { DataService } from './data.service';
-import { HttpClientModule } from '@angular/common/http';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -14,8 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    InMemoryWebApiModule.forRoot(DataService)
+    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
