@@ -28,5 +28,6 @@ export class GoodsService {
 
   public updateGood(good: {id: number, amount: number, price: number, title: string, description: string}){
     return this.http.put(`${this.SERVER_URL + 'goods'}/${good.id}`, good)
-}
+  }
+
 }
