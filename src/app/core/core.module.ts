@@ -5,10 +5,14 @@ import { CoreRoutingModule } from './core-routing.module';
 import { CoreComponent } from './core.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { DataService } from '../data.service';
+import { DataService } from './services/data.service';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [CoreComponent],
+  declarations: [
+    CoreComponent,
+    HeaderComponent
+  ],
   imports: [
     CommonModule,
     CoreRoutingModule,
